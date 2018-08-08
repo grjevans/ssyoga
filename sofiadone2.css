@@ -1,0 +1,975 @@
+* {
+box-sizing: border-box;
+}
+body {
+background: white;
+width: 100%;
+margin: 0px;
+padding: 0px;
+word-wrap: normal;
+}
+.header {
+display: grid;
+grid-template-rows: 70% 30%;
+grid-template-columns: repeat(3, 1fr);
+background: white;
+border: 1px solid rgba(255,165,0,0.2);
+/*border-radius: 5px;*/
+width: 100%;
+height: auto;
+overflow: hidden;
+/*text-align: center;*/
+margin: 0;
+/*margin-bottom: 5px;*/
+padding: 0px;
+font-family: 'Princess Sofia';
+/*box-shadow: 0px 2px 5px grey;*/
+}
+
+.headergr1 {
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 1;
+width: 100%;
+line-height: 1.1;
+margin: 0px;
+padding: 0px;
+z-index: 1;
+/*border: 1px solid blue;*/
+text-align: left;
+}
+.headertitle {
+/*color: rgba(111,75,0,0.8);*/
+/*opacity: 0.5;*/
+/*font-style: bold;*/
+color: brown;
+font-size: 1.5em;
+text-align: right;
+/*border: 1px solid green;*/
+/*transform: translateY(-10px);*/
+}
+.headertitle2 {
+/*color: rgba(111,75,0,0.8);*/
+/*opacity: 0.5;*/
+/*font-style: bold;*/
+color: brown;
+font-size: 1.5em;
+text-align: left;
+/*border: 1px solid green;*/
+/*transform: translateY(-10px);*/
+}
+.headergr2 {
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 2;
+grid-column-end: span 1;
+margin: 0px;
+padding: 0px;
+text-align: center;
+/*border: 1px solid orange;*/
+}
+
+.headergr3 {
+/*display: flex;*/
+/*justify-content: flex-start;*/
+/*align-items: center;*/
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 3;
+grid-column-end: span 1;
+line-height: 1.7;
+/*border: 1px solid orange;*/
+}
+
+.headergr4  {
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 3;
+margin: 0px;
+padding: 0px;
+z-index: 10;
+/*border: 1px solid orange;*/
+text-align: center;
+}
+.headersubtitle {
+transform: translateY(100px);
+padding: 5px;
+font-size: 1em;
+}
+.navgrid {
+display: grid;
+grid-template-rows: 10% 40% 25% 25%;
+grid-template-columns: 1fr;
+width: 100%;
+height: auto;
+/*background: rgba(204,153,0,0.6);*/
+/*background: rgba(255,255,0,0);*/
+margin: 0px;
+padding: 0px;
+/*box-shadow: 1px 1px 2px brown inset;*/
+text-align: center;
+overflow: hidden;
+}
+
+.g1 {
+display: grid;
+align-items: center;
+justify-items: center; 
+grid-template-rows: 1fr;
+grid-template-columns: repeat(6, 1fr);
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 1;
+}
+
+.g2 {
+grid-row-start: 3;
+grid-row-end: span 2;
+grid-column-start: 1;
+grid-column-end: span 1;
+width: 100%;
+height: auto;
+object-fit: cover;
+margin-bottom: 3px;
+/*object-fit: cover;*/
+/*overflow: hidden;*/
+box-shadow: 0px -1px 8px #333;
+}
+
+.g3 {
+grid-row-start: 2;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 1;
+background: linear-gradient(to bottom, rgba(255,255,240,0.5), rgba(255,255,0,0.3), rgba(81,47,0,0.3),rgba(111,75,0,0.3),rgba(183,130,0,0.3),rgba(204,153,0,0.3),rgba(255,255,0,0.3),rgba(255,255,240,0.5));
+text-align: center;
+}
+
+.hamburger {
+grid-area: 1 / 6 / 2 / 7;
+width: 100%;
+color: brown;
+font-size: 30px;
+font-weight: bold;
+/*border: 1px solid orange;*/
+cursor: pointer;
+overflow: hidden;
+z-index: 20;
+}
+.crab {
+width: 100%;
+height: 200px;
+margin: 0 auto;
+padding: 0px;
+object-fit: cover;
+opacity: 0.3;
+z-index: -10;
+}
+
+.far, .fab, .fas {
+/*width: 100%;*/
+color: brown;
+font-size: 30px;
+/*font-weight: bold;*/
+cursor: pointer;
+overflow: hidden;
+z-index: 20;
+text-align: center;
+/*margin: 0 auto;*/
+}
+.fa-facebook {
+/*display: grid;*/
+/*align-items: center;
+justify-items: center;*/
+grid-area: 1 / 3 / 2 / 4;
+}
+/*.headergr5  {
+grid-row-start: 3;
+grid-row-end: span 1;
+grid-column-start: 2;
+grid-column-end: span 1;
+margin: 0px;
+padding: 0px;
+z-index: 10;
+/*border: 1px solid orange;*/
+/*text-align: center;*/
+
+
+
+.whatwedo {
+font-weight: bold;
+font-size: 1.5em;
+font-family: 'Princess Sofia';
+color: brown;
+/*background: rgba(255,255,0,0.3);*/
+line-height: 1.6;
+/*margin: 0 auto 0 auto;
+padding: 0px;*/
+z-index: 20;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: yellow;
+    display: block;
+    transition: 0.3s;
+}
+
+sidenav a:hover {
+    color: brown;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    /*margin-left: 50px;*/
+}
+
+.maincontent {
+display: grid;
+grid-template-rows: repeat(6, auto);
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 5px;
+width: 100%;
+height: auto;
+}
+
+.sectionone {
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+/*background: violet;*/
+/*border-radius: 5px;*/
+width: 100%;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+/*box-shadow: -1px 2px 5px black;*/
+
+}
+
+.sectiontwo {
+grid-row-start: 2;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+/*background: violet;*/
+border: 1px solid rgba(255,165,0,0.2);
+/*border-radius: 5px;*/
+width: 100%;
+margin: 0 auto;
+padding: 0px;
+box-shadow: -1px 1px 5px black;
+}
+
+.sectionthree {
+grid-row-start: 3;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+/*background: violet;*/
+/*border: 1px solid rgba(255,165,0,0.2);*/
+/*border-radius: 5px;*/
+width: 100%;
+margin: 0px;
+padding: 0px;
+/*box-shadow: -2px 2px 5px black;*/
+}
+
+.sectionfour {
+grid-row-start: 4;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+/*background: violet;*/
+border: 1px solid rgba(255,165,0,0.2);
+/*border-radius: 5px;*/
+width: 100%;
+margin: 0 auto;
+padding: 0px;
+box-shadow: -2px 2px 5px black;
+}
+
+.sectionfive {
+grid-row-start: 5;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+/*background: violet;*/
+border: 1px solid rgba(255,165,0,0.2);
+/*border-radius: 5px;*/
+width: 100%;
+margin: 0 auto;
+padding: 0px;
+box-shadow: -2px 2px 5px black;
+}
+
+.sectionsix {
+grid-row-start: 6;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+/*background: violet;*/
+border: 1px solid rgba(255,165,0,0.2);
+/*border-radius: 5px;*/
+width: 100%;
+height: auto;
+margin: 0 auto;
+padding: 0px;
+box-shadow: -2px 2px 5px black;
+}
+
+
+.lady {
+width: 100%;
+height: 150px;
+margin: 0 auto;
+padding: 0px;
+object-fit: scale-down;
+}
+.yogajourney {
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+object-fit: scale-down;
+opacity: 0.2;
+}
+.contactcircle {
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+object-fit: scale-down;
+opacity: 0.1;
+}
+
+
+/*contact form css*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+ 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+    /*background-color: #4CAF50;*/
+    background: orange;
+    color: white;
+    font-size: 1em;
+    /*padding: 12px 20px;*/
+    padding: 1em;
+    margin: auto;
+    /*border: none;*/
+    border: 0px;
+    /*border-radius: 4px;*/
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/*.sendtome {
+background: brown;
+text-align: center;
+}*/
+/* Add a background color and some padding around the form */
+.formcontainer {
+    /*border-radius: 5px;*/
+    width: 100%;
+   /* height: 100%;*/
+    margin: 0 auto;
+    background-color: rgba(171,149,132,0.5);
+    padding: 20px;
+}
+#subject {
+max-width: 100%;
+
+}
+
+/*.soothemind {
+color: black;
+font-family: 'Princess Sofia';
+font-size: 0.75em;
+}*/
+
+/* aboutus css from here */
+
+
+.card {
+display: grid;
+grid-template-rows: 30% 50% 10% 10%;
+grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 grey;
+    width: 95%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.proftitle {
+grid-area: 1/1/2/2;
+z-index: 20;
+background: rgba(210,105,30,0.4);
+  
+}
+
+.profsubtitle2 {
+display: flex;
+align-items: center;
+justify-content: center;
+grid-area: 3/1/4/2;
+/*box-shadow: 0px 3px 5px #333;*
+/*background-image: url("flower.png");
+background-repeat: repeat;*/
+}
+
+.cardtitle {
+color: white;
+font-size: 1.5em;
+font-family: 'Princess Sofia';
+float: left;
+padding-left: 10px;
+}
+/*.cardtitle2 {
+color: dodgerblue;
+font-size: 1em;
+font-family: 'Princess Sofia';
+float: right;
+padding-right: 10px;
+}*/
+
+
+.profpic {
+grid-area: 1/1/3/2;
+display: flex;
+justify-content: center;
+align-content: center;
+margin: 0px;
+/*padding: 20px;*/
+padding: 0px;
+box-shadow: 0px 3px 5px #333;
+}
+
+
+.ssprofile {
+width: 100%;
+height: auto;
+object-fit: cover;
+margin: 0;
+padding: 0;
+}
+
+
+a {
+padding: 5px;
+text-decoration: none;
+}
+.introduceus {
+display: inline-block;
+width: 100%;
+font-size: 1em;
+color: orange;
+font-family: 'Princess Sofia';
+}
+
+ .two {
+display: inline-block;
+font-size: 1em;
+color: dodgerblue;
+margin: auto;
+text-align: center;
+padding: 10px;
+}
+
+.socmedabout {
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 50% 25% 25%;
+grid-area: 4/1/5/2;
+}
+
+ .modal {
+  display: none; 
+  grid-area: 2/1/3/2;
+  /*position: fixed; 
+  top: 5%;
+  left: 5%;*/
+  z-index: 50;
+  background: white;
+    padding: 10px;
+    width: 90%;
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  width: 90%; /* Could be more or less, depending on screen size */
+  font-size: 1em;
+  color: dodgerblue;
+  text-align: justify;
+}
+
+/* The Close Button (x) */
+.close {
+  position: fixed;
+  right: 25px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: dodgerblue;
+  z-index: 60;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+  z-index: 60;
+}
+
+/* the modal buttons restyled */
+.ouryoga, .ourtraining, .ourpassions {
+display: inline-block;
+width: 25%;
+height: 100%;
+margin: 0 auto;
+padding: 5px;
+font-family: 'Princess Sofia';
+font-size: 1em;
+font-weight: bold;
+/*background: rgba(0,0,0,0);*/
+/*border: 2px solid dodgerblue;*/
+border: none;
+color: dodgerblue;
+z-index: 25;
+}
+
+
+
+/* SECTION4 CSS ONLY*/
+.holidaysheader {
+/*display: flex;
+align-items: center;
+justify-content: center;*/
+display: grid;
+grid-template-rows: repeat(2, auto);
+grid-template-columns: 30% 70%;
+line-height: 1.5;
+}
+.holidaysintro {
+width: 100%;
+font-size: 1em;
+color: chocolate;
+font-family: 'PT Sans';
+/*border-top: 1px solid chocolate;*/
+}
+.saharahol {
+max-width: 100%;
+height: auto;
+object-fit: scale-down;
+z-index: -100;
+}
+.pastholidays {
+width: 100%;
+margin: 0 auto;
+padding: 0px;
+background: url("lessons.jpg");
+/*background: #FFFFCC;*/
+}
+a {
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+}
+.linkcontainer{
+margin: 0px;
+padding: 0px;
+}
+
+.holidaystitle {
+display: inline-block;
+color: orange;
+font-size: 1.5em;
+font-family: 'Princess Sofia';
+}
+.holidayssubtitle {
+font-size: 1em;
+color: chocolate;
+font-family: 'PT Sans';
+border-top: 1px solid chocolate;
+text-align: center;
+}
+.holidayssubtitle2 {
+font-size: 1em;
+color: chocolate;
+font-family: 'PT Sans';
+border-bottom: 1px solid chocolate;
+text-align: center;
+}
+.buttontext {
+font-size: 1.5em;
+color: brown;
+font-family: 'Princess Sofia';
+text-align: center;
+}
+
+.futureholidays {
+width: 100%;
+}
+.futtext1 {
+display: block;
+color: chocolate;
+font-size: 1em;
+z-index: 100;
+text-align: center;
+font-weight: bold;
+border-bottom: 1px solid chocolate;
+}
+.pasthols {
+display: block;
+margin: 1em;
+padding: 1em;
+text-align: center;
+font-size: 1em;
+}
+.yeartext {
+color: orange;
+font-size: 1.5em;
+font-family: 'PT Sans';
+text-align: center;
+font-weight: bold;
+}
+.sslogo {
+grid-area: 1/1/3/2;
+display: block;
+width: 100%;
+height: auto;
+/*object-fit: scale-down;*/
+}
+/*.energisesoul {
+grid-area: 2/2/3/3;
+font-size: 1.5em;
+font-family: 'Princess Sofia';
+text-align: left;
+}*/
+.overlay1 {
+position: absolute;
+font-family: 'PT Sans';
+font-size: 1.5em;
+right: 0px;
+color: orange;
+}
+.overlaybox {
+position: relative;
+}
+
+/* MOBILE STUDIO CSS ONLY */
+
+.maingrid{
+display: grid;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  /*font-size: 1em;*/
+  grid-template-rows: (10% 90%);
+  grid-template-columns: 1fr;
+}
+.mobstudheader {
+grid-area: 1/1/2/2;
+z-index: 100;
+text-align: center;
+}
+.mobile1 {
+grid-area: 1/1/3/2;
+width: 100%;
+margin: 0px;
+padding: 0px;
+z-index: -100;
+/*border: 4px solid blue;*/
+}
+.mobstudtitle {
+color: brown;
+font-family: 'PT Sans';
+font-size: 1.5em;
+}
+.mobstudinfo {
+/*border: 4px solid blue;*/
+text-align: center;
+}
+.mobstuddefined {
+font-family: 'Princess Sofia';
+color: chocolate;
+font-size: 1.5em;
+}
+.mobstudcontacts {
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 25% 50% 25%;
+width: 100%;
+text-align: center;
+}
+.mobilevenues {
+width: 100%;
+padding: 0px;
+margin: 0px;
+list-style: none;
+font-size: 1.4em;
+font-family: 'PT Sans';
+color: brown;
+}
+.mobstudintouch {
+/*display: flex;
+align-items: center;
+justify-content: center;*/
+width: 100%;
+grid-area: 1/2/2/3;
+font-size: 1.5em;
+color: brown;
+margin: 0 auto;
+padding: 0px;
+}
+.mobcell {
+/*display: flex;
+align-items: center;
+justify-content: center;*/
+grid-area: 1/1/2/2;
+color: orange;
+font-size: 1.5em;
+}
+.mobfrm {
+/*display: flex;
+align-items: center;
+justify-content: center;*/
+grid-area: 1/3/2/4;
+color: orange;
+font-size: 1.5em;
+}
+.workplace {
+/*position: relative;*/
+text-align: center;
+}
+.workyoga {
+grid-area: 1/1/3/2;
+/*position: relative;*/
+width: 100%;
+height: 80px;
+padding: 0.5em;
+object-fit: cover;
+z-index: -100;
+}
+.workplacetext {
+color: white;
+font-weight: bold;
+grid-area: 1/1/2/2;
+/*position: absolute;*/
+/*top: -20px;
+left: 0px;*/
+text-align: center;
+z-index: 100;
+}
+
+li {
+display: grid;
+grid-template-rows: 10% 90%;
+grid-template-columns: 1fr;
+}
+.footer {
+width: 100%;
+height: auto;
+font-size: 1em;
+color: white;
+margin: 0px;
+padding: 0px;
+background: chocolate;
+}
+/*lessons css*/
+ .accordion {
+ display: grid;
+ grid-template-rows: 1fr;
+ grid-template-columns: 1fr;
+    /*background-color: brown;*/
+    /*color: white;*/
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.butfront {
+display: grid;
+ grid-template-rows: 1fr;
+ grid-template-columns: 1fr;
+ background: url("yogasymbol.jpg");
+ border: 2px solid chocolate;
+ padding: 0px;
+}
+.active, .accordion:hover {
+   /* background-color: red; */
+   
+}
+
+.daylabel {
+grid-area: 1/1/2/2;
+text-align: center;
+ font-family: 'Princess Sofia';
+ font-size: 2em;
+ color: brown;
+ padding: 0px;
+}
+.daysntimes {
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+padding: 0 18px;
+display: none;
+background-color: white;
+border: 1px double chocolate;
+font-size: 1.5em;
+color: black;
+font-family: 'Princess Sofia';
+font-family: 'PT Sans';
+overflow: hidden;
+}
+.daysntimes2 {
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: repeat(2, 1fr);
+}
+.mons1 {
+grid-area:1/1/2/2;
+}
+.mons2 {
+grid-area: 1/2/2/3;
+text-align: right;
+}
+.mons3 {
+grid-area: 2/1/3/2;
+}
+.mons4 {
+grid-area: 2/2/3/3;
+text-align: right;
+}
+
+.tuess1 {
+grid-area:1/1/2/2;
+}
+.tuess2 {
+grid-area: 1/2/2/3;
+text-align: right;
+}
+.tuess3 {
+grid-area: 2/1/3/2;
+}
+.tuess4 {
+grid-area: 2/2/3/3;
+text-align: right;
+}
+
+.wedss1 {
+grid-area:1/1/2/2;
+}
+.wedss2 {
+grid-area: 1/2/2/3;
+text-align: right;
+}
+
+.thurss1 {
+grid-area:1/1/2/2;
+}
+.thurss2 {
+grid-area: 1/2/2/3;
+text-align: right;
+}
+.thurss3 {
+grid-area: 2/1/3/2;
+}
+.thurss4 {
+grid-area: 2/2/3/3;
+text-align: right;
+}
+/*css for title*/
+.lessonstitle {
+grid-row-start: 1;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+text-align: center;
+z-index: 10;
+color: #cc9900;
+font-size: 1.8em;
+font-family: 'Princess Sofia';
+margin: 0 auto;
+padding: 0px;
+padding-top: 10px;
+line-height: 1.0;
+}
+
+.lessonlegals {
+grid-row-start: 2;
+grid-row-end: span 1;
+grid-column-start: 1;
+grid-column-end: span 2;
+text-align: center;
+z-index: 10;
+color: brown;
+font-size: 1.2em;
+margin: 0 auto;
+padding: 0px;
+}
+.soothemind {
+color: black;
+font-size: 1em;
+}
+.energisesoul {
+/*grid-area: 2/2/3/3;*/
+color: black;
+font-size: 1em;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link href='https://fonts.googleapis.com/css?family=Princess Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+<link rel="stylesheet" href="sofiadone2.css" type="text/css"/>
+</head>
+<body>
+<header class="header">
+<div class="headergr1">
+<h1 class="headertitle">Sandra<br/>&<br/>Sofia's</h1>
+</div>
+<div class="headergr2">
+<img src="sslogo.png" class="lady"/>
+</div>
+<div class="headergr3">
+<h1 class="headertitle2">Yoga<br/> Ventures</h1>
+</div>
+<div class="headergr4">
+<h4 class="headersubtitle">We are the universe, experiencing itself</h4>
+</div>
+</header>
+<div class="navgrid">
+<div class="g1">
+<a href="#"><i class="far fa-envelope"></i></a>
+<a href="#"><i class="fas fa-phone"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<span class="hamburger" onclick="openNav()">&#9776;</span></div>
+<div class="g2">
+<img src="crab.jpg" class="crab" /></div>
+<div class="g3">
+<h3 class="whatwedo">Dynamic and Creative Yoga,<br/>Guided Visual Meditations,<br/>Sound Bath, Massage and more</h3></div>
+</div>
+ 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Our classes</a>
+  <a href="#">Contact Us</a>
+  <a href="#">About Us</a>
+  <a href="#">Mobile Yoga Studio</a>
+  <a href="#">YogaVentures Holidays</a>
+</div>
+
+<main class="maincontent">
+<section class="sectionone">
+<h2 class="lessonstitle">Our classes<br/><span class="soothemind">soothe your mind</span></h2>
+<div class="lessonlegals"><p>Experienced, fully-qualified yoga instruction for all through imaginative, immersive classes. Click on each day to view lessons.</p></div>
+ <button class="accordion"><div class="butfront"><p class="daylabel">Monday</p></div></button>
+<div class="panel">
+<div class="daysntimes">
+<p class="mons1">1pm-2pm</p><p class="mons2">Wyre Forest Leisure Centre, Kidderminster DY11 7DT</p>
+<p class="mons3">6:45pm-7:45pm</p><p class="mons4">'AuraVeda', Kinver DY7 6HF</p>
+</div>
+</div>
+<button class="accordion"><div class="butfront"><p class="daylabel">Tuesday</p></div></button>
+<div class="panel">
+<div class="daysntimes">
+<p class="tuess1">9:15am-10:15am</p><p class="tuess2">'DW Sports' Club, Kidderminster DY10 1AA (members only)</p>
+<p class="tuess3">5:00pm-6:15pm<br/>& 6:15pm-7:30pm</p><p class="tuess4">'Mercure Hotel' Bewdley <br/>DY12 1LA</p>
+</div>
+</div>
+<button class="accordion"><div class="butfront"><p class="daylabel">Wednesday</p></div></button>
+<div class="panel">
+<div class="daysntimes2">
+<p class="wedss1">5:00pm-6:15pm</p><p class="wedss2">'Cookley Village Hall, Kidderminster DY10 3RH</p>
+</div>
+</div>
+<button class="accordion"><div class="butfront"><p class="daylabel">Thursday</p></div></button>
+<div class="panel">
+<div class="daysntimes">
+<p class="thurss1">10:00am-11:15am<br/>& 11:15am-12:30pm<br/>(strong)</p><p class="thurss2">Mercure Hotel, Bewdley <br/>DY12 1LA</p>
+<p class="thurss3">12:45pm-2pm<br/>& 6:15pm-7:30pm<br/>(gentle)</p><p class="thurss4">Mercure Hotel, Bewdley <br/>DY12 1LA</p>
+</div>
+</div>
+</section>
+<section class="sectiontwo">
+<div class="formcontainer">
+  <form action="action_page.php">
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." onfocus="this.placeholder=''">
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    
+    <label for="contactabout">I'm contacting about</label>
+    <select id="contactabout" name="contactabout">
+      <option value="classes">yoga classes</option>
+      <option value="privatehire">private hire/ mobile studio</option>
+      <option value="yogaholidays">yoga holidays</option>
+      <option value="somethingelse">something else</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" class="sendmeinfo" value="send">
+
+  </form>
+</div>
+</section>
+<section class="sectionthree">
+<div class="card">
+<div class="profpic">
+  <img src="aboutbackg.jpg" alt="ss"  class="ssprofile">
+  </div>
+  <div class="proftitle">
+  <h1 class="cardtitle">Sandra&Sofia are mother&daughter yoga instructors. They hope to meet you through their 'YogaVentures' soon<h1>
+  </div>
+  <div class="socmedabout">
+   <p class="introduceus">and welcome your contact.</p>
+  <a href="#"><i class="fab ftwo fa-facebook-f"></i></a>
+  <a href="#"><i class="fab insttwo fa-instagram"></i></a>
+  </div>
+ <div class="profsubtitle2">
+ <!-- Button to open the modal -->
+ <p class="introduceus">They'd love you to know more about their..</p>
+<button class="ouryoga" onclick="document.getElementById('id01').style.display='block'">Yoga</button>
+<button class="ourtraining" onclick="document.getElementById('id02').style.display='block'">Training</button>
+<button class="ourpassions" onclick="document.getElementById('id03').style.display='block'">Passions</button>
+  </div>
+ <!-- The Modal (contains the Sign Up form) -->
+  <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="modal-content">Sandra's classes are a model of safe yoga & wellbeing. Through guidance & invitation, individuals learn, enjoy and succeed within their own limitations.<br/>All classes commence with a grounding & long awakening warm up, preparing the joints & the body to work deeper as the lesson progresses.<br/>Often guided with a theme, classes progress with positive affirmations, guided meditations, beautiful visualisations & empowering mantras.<br/>Sessions culminate with soothing, transporting sound baths.<br/>Sessions are a journey & create a full mind, body & spirit work out. Her work is full of positivity & connects you to the beauty of the world & life within & around us.<br/>
+  </div>
+</div>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="modal-content">Sandra...<br/>Studying PE at University in Buenos Aires and with 35 years of experience in safe and beneficial body movement, Sandra began her Yoga training with Oscar Bonifacio at home in Argentina & began teaching in the UK 20 years ago, completing CPD in Yoga alongside her practice.<br/>She completed a 200 hour course in Hi Ki yoga, is trained in freestyle fitness Yoga, and 'Buff Bones'. She has also been a swimming, step, aqua & land aerobics instructor.<br/>She still teaches one aqua-aerobics class a week with some of her regular students having attended for over 19 years!</br><br/>Sofia...<br/><br/>Sofia's  background is in dance & she grew up surrounded by Yoga, experiencing and learning from her mother.<br/>Sofia, now qualified, helps with classes, their participation at events, workshops, retreats and their successful 'Yoga holidays'.<br/>In 2016 Sofia travelled to Rishiskesh India, said to be the home of Yoga and completed a 200 hour YTT as a foundation for her own Yoga teaching.<br/>In February 2018 she attended the 'Womb Yoga' course by Uma Dinsmore Tuli & Sivani Matta.<br/>-A course on Yoga's use in women's wellness therapy.<br/><br/>Together..<br/><br/>Being multi-lingual helps both Sandra and Sofia have outstanding communication skills.<br/>They continually attend CPD courses & immersion workshops for teachers with some of their inspirations<br/>...Nisha Srivastava, Uma Dinsmore Tuli, Tanja Mickwitz, Shiva Rea & others, to constantly widen their wisdom, experience & practice.<br/>Both are also trained in Indian Head & Ayurvedic massage.
+  </div>
+</div>
+
+<div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="modal-content">
+Sandra's passion is the sharing of love & care.<br/>Her unbounded energy, soothing voice & words from the heart cannot be forgotten. Her south-american heritage, travel and life experiences influence the unique, dynamic style of her yoga.<br/>She invites & integrates creative expression & movement into her work, connecting people to their inner rhythm & fluidity. Her motherly nature welcomes everybody to explore their body & tune into it's message.<br/>Her yoga forms & adapts to benefit all walks of life. Underpinning all her work is a deep desire to help people reach a more happy & balanced state of being.<br/><br/>Sofia's 'YogaVentures' include creating, organising & facilitating workshops, retreats & extremely popular, innovative, 'yoga, meditation & well-being holidays' around the UK & overseas.<br/>She is passionate about inviting different teachers & healers to share their techniques, knowledge and experience with you.<br/>In addition to 'YogaVentures', Sofia works at UK festivals, dancing (normally barefoot) & connecting with people everywhere she goes, often accompanied by her free sensory interactive stall..<br/>..a space for all to come & explore sound, vision, colour & texture, through her sharing of 'stuff'...instruments, fancy dress, tribal paints & more.<br/>She is particularly in love with the element of water.<br/><br/>
+Together they invite you to join them at a YogaVentures offering, a safe space for anybody that wishes to join in.<br/>They also share their work at Yoga festivals & shows, such as 'World Yoga Festival' & the 'Om Yoga shows'.<br/>Each of us offer such a different perspective on life-bringing people together is something they cherish & feel very grateful to be able to do!
+  </div>
+</div>
+</div>
+</section>
+<section class="sectionfour">
+<header class="holidaysheader">
+<img src="sslogo.png" class="sslogo"/>
+<h1 class="holidaystitle">S&S YogaHolidays<br/><span class="energisesoul">energise your soul</span></h1></header>
+<article class="holidaysintro"><h3 class="holidayssubtitle">
+Experience and practise yoga in especially-selected, beautiful  locations. Relax and enjoy the shared experience on our 'yoga-themed' holidays.
+</h3>
+</article>
+<article class="pastholidays">
+<div class="linkcontainer"><a href="#" class="pasthols"><p class="buttontext">View previous holidays</p></a></div><div class="linkcontainer"><a href="#" class="pasthols"><p class="buttontext">Receive further information</p></a></div>
+</article>
+<article class="futureholidays">
+<h3 class="holidayssubtitle2">or browse our future holidays, below.</h3>
+<div class="overlaybox">
+<p class="overlay1">Place A, October 2018.</p>
+<img src="saharahol.jpg" class="saharahol"/>
+</div>
+<div class="overlaybox">
+<p class="overlay1">Place B, December 2018.</p>
+<img src="hols3.jpg" class="saharahol"/>
+</div>
+<p class="yeartext">2019</p>
+<div class="overlaybox">
+<p class="overlay1">Place C, June 2019.</p>
+<img src="hols4.jpg" class="saharahol"/>
+</div>
+<div class="overlaybox">
+<p class="overlay1">Place D, September 2019.</p>
+<img src="hols5.jpg" class="saharahol"/>
+</div>
+</article>
+</section>
+<section class="sectionfive"><header class="mobstudheader">
+<h1 class="mobstudtitle">Mobile Yoga Studio</h1>
+</header>
+ <img src="mobile1.jpg" class="mobile1"/>
+  </div>
+  <div class="mobstudinfo">
+  <p class="mobstuddefined">We'll bring the yoga to you.<br/>Personalise everything about your session, from the focus of your yoga to the location, guests and time.</p>
+  <ul class="mobilevenues"><p class="mobstuddefined2">Contact us to try yoga sessions at your..</p>
+  <li class="workplace"><img src="workyoga.jpg" class="workyoga"/><p class="workplacetext">workplace</p></li>
+   <li class="home"><img src="home.jpg" class="workyoga"/><p class="workplacetext">home</p></li>
+    <li class="party"><img src="party.jpg" class="workyoga"/><p class="workplacetext">party</p></li>
+    <li class="community"><img src="community.jpg" class="workyoga"/><p class="workplacetext">community space</p></li>
+      <li class="event"><img src="event.jpg" class="workyoga"/><p class="workplacetext">event</p></li>
+      </ul>
+      <p class="mobstuddefined">We supply all mats, decorations and equipment. You simply relax and enjoy.</p>
+      </div>
+      <div class="mobstudcontacts">
+      <a href="tel:+44-0976006"><i class="mobcell fas fa-phone"></i></a>
+      <p class="mobstudintouch">contact us</p>
+     <a href="#"><i class="mobfrm fab fa-wpforms"></i></a>
+      </div>
+      </section>
+</main>
+<footer class="footer">S&S Yogaventures2018. All staff hold 'DRB' clearance.<br/>Lessons in 'Private Members' Clubs can be subject to change outside of our control.<br/>No data provided by you is passed to any 3rd party.</br>website by 'EvansTheWeb'/www.etw.com</footer>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>      
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>      
+</body>
+</html>
